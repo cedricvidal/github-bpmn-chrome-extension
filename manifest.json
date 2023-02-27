@@ -1,0 +1,41 @@
+{
+  "manifest_version": 3,
+  "name": "Github BPMN Viewer",
+  "version": "1.0.0",
+  "description": "Adds an inline BPMN viewer to Github PR and commit pages.",
+  "icons": {
+    "16": "assets/icons/icon16.png",
+    "48": "assets/icons/icon48.png",
+    "128": "assets/icons/icon128.png"
+  },
+  "content_scripts": [
+    {
+      "js": [
+        "content/index.js"
+      ],
+      "matches": ["*://github.com/*"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "assets/icons/*.png"
+      ],
+      "matches": [],
+      "extension_ids": []
+    },
+    {
+      "resources": [
+        "viewer/index.html"
+      ],
+      "matches": ["*://github.com/*"],
+      "extension_ids": []
+    }
+  ],
+  "permissions": [
+    "tabs"
+  ],
+  "host_permissions": [
+    "*://*/*"
+  ]
+}
