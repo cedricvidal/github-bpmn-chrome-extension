@@ -1,7 +1,8 @@
 {
   "manifest_version": 3,
   "name": "Github BPMN Viewer",
-  "version": "1.0.0",
+  "version": "1.0.0.1",
+  "version_name": "v1.0.0-beta.1",
   "description": "Adds an inline BPMN viewer to Github PR and commit pages.",
   "icons": {
     "16": "assets/icons/icon16.png",
